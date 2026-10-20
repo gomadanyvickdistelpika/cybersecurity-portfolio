@@ -11,6 +11,12 @@ Technical support engineer with 10+ years in enterprise IT (VMware/Broadcom, DXC
 
 Outline notes: [professional-statement.md](professional-statement.md)
 
+## Google Cybersecurity Professional Certificate — in progress
+
+- Provider: Google Career Certificates on Coursera ([certificate overview](https://www.coursera.org/professional-certificates/google-cybersecurity), 9 courses)
+- Current course: [Course 1 — Foundations of Cybersecurity](https://www.coursera.org/learn/foundations-of-cybersecurity)
+- Portfolio activities done: professional statement. More (security audit, incident report, Linux/SQL/Python labs) will be added here as I complete them.
+
 ## Project: SOC L1 Case Lab
 
 A browser-based triage queue with **20 fictional incidents**. For each case you:
