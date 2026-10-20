@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en-IE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dany Pika — Cybersecurity Portfolio</title>
+<meta name="description" content="Cybersecurity portfolio of Goma Dany Vick Distel Pika — Tier-1 SOC analyst in training, Dublin, Ireland.">
+<style>
+  :root { --bg:#0b1220; --panel:#111a2c; --line:#23324f; --text:#e6edf7; --muted:#93a3bd; --accent:#2dd4bf; --ink:#062b27; }
+  @media (prefers-color-scheme: light) { :root { --bg:#f4f6fa; --panel:#fff; --line:#d6deea; --text:#0f1b2d; --muted:#52627a; --accent:#0f766e; --ink:#fff; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  .wrap { max-width:960px; margin:0 auto; padding:40px 16px 60px; }
+  header .kicker { color:var(--accent); font:600 13px/1 ui-monospace,Menlo,Consolas,monospace; letter-spacing:.06em; }
+  h1 { font-size:clamp(28px,5vw,40px); line-height:1.15; margin:10px 0 8px; }
+  .lead { color:var(--muted); font-size:18px; max-width:65ch; margin:0; }
+  .btns { display:flex; gap:10px; flex-wrap:wrap; margin-top:20px; }
+  .btn { display:inline-block; padding:10px 16px; border-radius:8px; text-decoration:none; font-weight:700; border:1px solid var(--line); color:var(--text); }
+  .btn.primary { background:var(--accent); color:var(--ink); border-color:var(--accent); }
+  section { margin-top:40px; }
+  h2 { font-size:20px; margin:0 0 12px; }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:18px 20px; }
+  blockquote { margin:0; font-size:17px; border-left:3px solid var(--accent); padding-left:16px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+  .card h3 { margin:0 0 6px; font-size:17px; }
+  .card p { margin:0 0 10px; color:var(--muted); font-size:15px; }
+  .tags { display:flex; flex-wrap:wrap; gap:6px; }
+  .tag { font-size:12px; border:1px solid var(--line); border-radius:99px; padding:2px 10px; color:var(--muted); }
+  ul { margin:0; padding-left:20px; } li { margin-bottom:4px; }
+  a { color:var(--accent); }
+  footer { margin-top:50px; color:var(--muted); font-size:13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">CYBERSECURITY PORTFOLIO · DUBLIN, IRELAND</div>
+    <h1>Goma Dany Vick Distel Pika</h1>
+    <p class="lead">Technical support engineer with 10+ years in enterprise IT, moving into Tier-1 SOC and incident response. Google Cybersecurity Certificate in progress.</p>
+    <div class="btns">
+      <a class="btn primary" href="lab/">Open the SOC L1 Case Lab</a>
+      <a class="btn" href="https://github.com/gomadanyvickdistelpika/cybersecurity-portfolio/tree/main/cases">Read the 20-case casebook</a>
+      <a class="btn" href="https://github.com/gomadanyvickdistelpika/cybersecurity-portfolio/blob/main/professional-statement.md">Professional statement</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>Professional statement</h2>
+    <div class="card"><blockquote>I am a technical support engineer with over ten years of enterprise IT experience, moving into cybersecurity because I enjoy following the evidence in logs to find out what really happened, and then stopping it from happening again. My strengths are careful log analysis, clear written incident notes and automating repetitive work with Python and PowerShell, and I value protecting people and organisations, keeping honest records, and explaining security in plain language — in both English and French — so that every user can stay safe. I want to use these strengths to help security teams detect, triage and escalate threats quickly, and to keep their systems and data confidential, intact and available.</blockquote></div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>SOC L1 Case Lab</h3>
+        <p>Interactive triage queue with 20 fictional incidents: phishing, BEC, MFA fatigue, password spray, OAuth consent, DGA beaconing, ransomware, LSASS dumping and more. Each case has raw logs, a KQL hunting query, defanged IOCs, MITRE ATT&amp;CK mapping, a runbook, scoring and a model ticket.</p>
+        <div class="tags"><span class="tag">KQL</span><span class="tag">MITRE ATT&amp;CK</span><span class="tag">Microsoft Sentinel</span><span class="tag">Defender XDR</span><span class="tag">Entra ID</span><span class="tag">Linux syslog</span></div>
+        <p style="margin-top:10px"><a href="lab/">Launch lab →</a></p>
+      </div>
+      <div class="card">
+        <h3>Incident casebook (20 write-ups)</h3>
+        <p>The same 20 cases written up as analyst tickets: evidence → query → indicators → ATT&amp;CK → decision → notes. 9 are closed at L1 and 11 escalated, to practise knowing when <em>not</em> to escalate.</p>
+        <div class="tags"><span class="tag">Incident documentation</span><span class="tag">NIST incident response</span></div>
+        <p style="margin-top:10px"><a href="https://github.com/gomadanyvickdistelpika/cybersecurity-portfolio/tree/main/cases">Read casebook →</a></p>
+      </div>
+      <div class="card">
+        <h3>Google Cybersecurity Certificate</h3>
+        <p>Course portfolio activities (in progress): professional statement, security audit, incident report, and Linux/SQL/Python labs — added here as I complete them.</p>
+        <div class="tags"><span class="tag">In progress</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="grid">
+      <div class="card"><h3>From 10+ years of enterprise support</h3><ul>
+        <li>Log analysis and root-cause troubleshooting (VMware vSphere / ESXi / vCenter)</li>
+        <li>SSL/TLS certificate lifecycle and PKI troubleshooting</li>
+        <li>Clear case notes, customer updates and escalations</li>
+        <li>Automation with Python and PowerShell (PowerCLI)</li></ul></div>
+      <div class="card"><h3>Building now (cybersecurity)</h3><ul>
+        <li>SOC triage: phishing, identity, endpoint and network alerts</li>
+        <li>KQL hunting queries; MITRE ATT&amp;CK mapping</li>
+        <li>IOC handling and defanging; incident documentation</li>
+        <li>Linux, SQL and Python for security (Google certificate)</li></ul></div>
+      <div class="card"><h3>Languages</h3><ul>
+        <li>French (native), English (fluent)</li>
+        <li>Lingala, Kikongo, Lari, Mooré, some Dioula</li></ul></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <div class="card"><ul>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/dany-goma-vyck-distel-pika-8b905b17/" target="_blank" rel="noopener">linkedin.com/in/dany-goma-vyck-distel-pika-8b905b17</a></li>
+      <li>Email: therealdan2015@gmail.com</li>
+      <li>GitHub: <a href="https://github.com/gomadanyvickdistelpika">github.com/gomadanyvickdistelpika</a></li>
+    </ul></div>
+  </section>
+
+  <footer>
+    All lab data is fictional (reserved .example domains and documentation IP ranges). Built by Dany as a learning project · <a href="https://github.com/gomadanyvickdistelpika">GitHub</a>
+  </footer>
+</div>
+</body>
+</html>

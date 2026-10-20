@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en-IE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SOC L1 Case Lab</title>
+<meta name="description" content="Hands-on Tier-1 SOC triage lab: 20 fictional incidents with raw logs, KQL hunting queries, MITRE ATT&CK mapping and defanged IOCs.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">L1</div>
+      <div>
+        <div class="brand-title">SOC L1 Case Lab</div>
+        <div class="brand-sub">Analyst triage queue · 20 cases</div>
+      </div>
+    </div>
+    <div class="progress-box">
+      <div class="progress-bar"><span id="progressFill"></span></div>
+      <div class="progress-text" id="progressText">0 of 20 cases completed</div>
+      <div class="progress-text" id="scoreText"></div>
+    </div>
+    <div class="filters">
+      <input id="search" type="search" placeholder="Search cases, IOCs, ATT&CK IDs…" aria-label="Search cases">
+      <select id="catFilter" aria-label="Filter by category"><option value="">All categories</option></select>
+    </div>
+    <nav class="queue" id="queue" aria-label="Case queue"></nav>
+    <div class="side-actions">
+      <button class="ghost" id="themeBtn" type="button">Toggle theme</button>
+      <button class="ghost" id="resetBtn" type="button">Reset progress</button>
+    </div>
+  </aside>
+
+  <main class="main" id="main">
+    <header class="topbar">
+      <button class="ghost menu-btn" id="menuBtn" type="button" aria-label="Show case queue">☰ Queue</button>
+      <span>SECURITY OPERATIONS / INCIDENT QUEUE</span>
+      <span class="pill">Fictional training tenant · Harbourline Ltd</span>
+    </header>
+    <div id="caseView"></div>
+  </main>
+</div>
+<script src="data/cases-01-10.js"></script>
+<script src="data/cases-11-20.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
